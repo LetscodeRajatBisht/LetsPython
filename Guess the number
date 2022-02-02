@@ -1,0 +1,18 @@
+print("Number of guesses is 9 times")
+
+loop = 1
+while(loop<9):
+    num = int(input("guess the number "))
+    if  num>20:
+        print("Number is bigger!")
+        loop = loop + 1
+        print(loop)
+        continue
+    elif num<20:
+        print("Number is smaller!")
+        loop = loop + 1
+        print(loop)
+        continue
+    else:
+        print("You won")
+        break
